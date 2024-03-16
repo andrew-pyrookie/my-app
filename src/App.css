@@ -1,6 +1,87 @@
 .App {
   text-align: center;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  width: calc((100% - 4px) / 3); /* Distribute available width equally for left and right columns */
+  border: 1px solid black;
+}
+
+.center-column {
+  width: calc(2 * ((100% - 4px) / 3)); /* Make the center column twice as wide as the side columns */
+  border-left: 1px solid black; /* Add a border between the columns */
+  border-right: 1px solid black; /* Add a border between the columns */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.user-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.actions button {
+  margin-right: 10px;
+}
 
 .App-logo {
   height: 40vmin;
