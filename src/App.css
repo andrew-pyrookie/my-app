@@ -1,23 +1,36 @@
+@font-face {
+  font-family: "Advent Pro";
+  src: url("/fonts/AdventPro-Regular.woff2") format("woff2"),
+       url("/fonts/AdventPro-Regular.ttf") format("truetype");
+}
 .App {
   text-align: center;
+  font-family: "Advent Pro", sans-serif;
 }
 .container {
   display: flex;
-  justify-content: space-between;
+}
+
+.left-column,
+.center-column,
+.right-column {
+  flex: 1; /* Distribute available space equally */
 }
 
 .left-column,
 .right-column {
-  width: calc((100% - 4px) / 3); /* Distribute available width equally for left and right columns */
   border: 1px solid black;
 }
 
 .center-column {
-  width: calc(2 * ((100% - 4px) / 3)); /* Make the center column twice as wide as the side columns */
   border-left: 1px solid black; /* Add a border between the columns */
   border-right: 1px solid black; /* Add a border between the columns */
 }
 
+.right-column {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+}
 ul {
   list-style: none;
   padding: 0;
@@ -116,4 +129,37 @@ img {
   to {
     transform: rotate(360deg);
   }
+}
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 5px;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.like-box,
+.trends-box {
+  margin-bottom: 20px;
+}
+
+.like-box p {
+  font-weight: bold;
+}
+
+.trend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trend span {
+  margin-right: 10px;
 }
