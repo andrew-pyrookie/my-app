@@ -54,6 +54,22 @@ function App() {
               </div>
             </div>
             {/* Add more dynamic posts as needed */}
+            <div className="post">
+              <div className="user-info">
+                <img src={profilePicture} alt="User Profile" />
+                <span className="username">Musili</span>
+              </div>
+              <div className="message">
+                Moh Salah Belongs AWB pockets.
+              </div>
+              <div className="actions">
+                <a href="#"><img src={replyIcon} alt="reply Icon" />  </a>
+                <a href="#"><img src={repostIcon} alt="repost Icon" /> </a>
+                <a href="#"><img src={voteUpIcon} alt="voteUp Icon" /> </a>
+                <a href="#"><img src={voteDownIcon} alt="voteDown Icon" /> </a>
+              </div>
+            </div>
+            {/* Add more dynamic posts as needed */}
           </div>
         </div>
         <div className="right-column">

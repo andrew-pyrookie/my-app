@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Advent Pro";
-  src: url("/fonts/AdventPro-Regular.woff2") format("woff2"),
-       url("/fonts/AdventPro-Regular.ttf") format("truetype");
-}
+
 .App {
   text-align: center;
   font-family: "Advent Pro", sans-serif;
@@ -10,19 +6,17 @@
 .container {
   display: flex;
 }
-
-.left-column,
-.center-column,
-.right-column {
-  flex: 1; /* Distribute available space equally */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
-
 .left-column,
 .right-column {
-  border: 1px solid black;
+  width: 20%;
 }
-
 .center-column {
+  width: 50%;
   border-left: 1px solid black; /* Add a border between the columns */
   border-right: 1px solid black; /* Add a border between the columns */
 }
@@ -30,14 +24,18 @@
 .right-column {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack elements vertically */
+  width: 30%;
 }
 ul {
   list-style: none;
   padding: 0;
+  margin:0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -48,7 +46,7 @@ a {
 img {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .navigation {
@@ -56,6 +54,7 @@ img {
   justify-content: space-between;
   list-style: none;
   padding: 0;
+  border-bottom: 2px solid black;
 }
 
 .navigation li {
@@ -66,26 +65,11 @@ img {
   text-decoration: none;
   color: black;
 }
-
 .navigation a.active {
-  text-decoration: underline;
-  font-weight: bold;
+  text-decoration: underliqwepruioold;
 }
-
 .post {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-
-.user-info img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.username {
-  font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
 .message {
